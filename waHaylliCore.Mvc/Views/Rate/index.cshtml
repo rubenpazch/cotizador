@@ -1,0 +1,40 @@
+﻿@model IEnumerable<waHaylliCore.EntityModel.Rates.ViewModels.RateDisplayViewModel>
+
+@{
+    ViewBag.Title = "index";
+}
+
+<h2>index</h2>
+
+
+<p>
+    @Html.ActionLink("Create new","Create")
+</p>
+
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.rateId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nameRate)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.rateId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nameRate)
+        </td>
+        <td>
+        @Html.ActionLink("Edit", "Edit", new {  id=item.rateId }) |
+        @Html.ActionLink("Delete", "Delete", new {  id=item.rateId  })
+        </td>
+    </tr>
+    }
+</table>

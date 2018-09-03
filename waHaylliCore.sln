@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "waHaylliCore.EntityModel", "waHaylliCore.EntityModel\waHaylliCore.EntityModel.csproj", "{BDDC87E3-F33A-4145-B223-CBBBC403E63B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "waHaylliCore.DataModel", "waHaylliCore.DataModel\waHaylliCore.DataModel.csproj", "{74C9EBAC-84B4-49A5-9B1F-B031A7BFFC2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "waHaylliCore.Mvc", "waHaylliCore.Mvc\waHaylliCore.Mvc.csproj", "{22128F54-24E6-46F2-83EA-53E22E5F973B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{BDDC87E3-F33A-4145-B223-CBBBC403E63B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDDC87E3-F33A-4145-B223-CBBBC403E63B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDDC87E3-F33A-4145-B223-CBBBC403E63B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C9EBAC-84B4-49A5-9B1F-B031A7BFFC2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C9EBAC-84B4-49A5-9B1F-B031A7BFFC2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C9EBAC-84B4-49A5-9B1F-B031A7BFFC2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C9EBAC-84B4-49A5-9B1F-B031A7BFFC2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22128F54-24E6-46F2-83EA-53E22E5F973B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22128F54-24E6-46F2-83EA-53E22E5F973B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22128F54-24E6-46F2-83EA-53E22E5F973B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22128F54-24E6-46F2-83EA-53E22E5F973B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

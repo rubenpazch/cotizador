@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace waHaylliCore.EntityModel
 {
-    public class Class1
+    public class City
     {
+        public int cityId { get; set; }
+        public string name { get; set; }
     }
 }

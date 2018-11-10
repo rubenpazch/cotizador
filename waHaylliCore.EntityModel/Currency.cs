@@ -12,5 +12,13 @@ namespace waHaylliCore.EntityModel
         public string shortName { get; set; }
         public string largeName { get; set; }
         public string country { get; set; }
+
+        public Currency(int currencyId, string shortName, string largeName, string country)
+        {
+            this.currencyId = currencyId;
+            this.shortName = shortName;
+            this.largeName = largeName;
+            this.country = country;
+        }
     }
 }

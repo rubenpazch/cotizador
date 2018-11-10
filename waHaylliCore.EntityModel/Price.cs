@@ -13,5 +13,18 @@ namespace waHaylliCore.EntityModel
         public DateTime expiration { get; set; }
         public Service service { get; set; }
         public int totalPax { get; set; }
+
+        public Price(int priceId, DateTime registration, DateTime expiration, Service service, int totalPax)
+        {
+            this.priceId = priceId;
+            this.registration = registration;
+            this.expiration = expiration;
+            this.service = service;
+            this.totalPax = totalPax;
+        }
+        public override string ToString()
+        {
+            return "Id: "+ priceId+ " Registration:  "+registration.ToString()+ " Total Pax: "+totalPax+"" + "\n\n" + service+"\n";
+        }
     }
 }

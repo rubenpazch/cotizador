@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using waHaylliCore.EntityModel;
 using waHaylliCore.EntityModel.Rates.ViewModels;
 using System.Data.Entity;
+using waHaylliCore.EntityModel.Repository;
 
 namespace waHaylliCore.DataModel.Rates
 {
-    public class RateRepository
+    public class RateRepository : IRateRepository
     {
         public List<RateDisplayViewModel> GetRates()
         {
@@ -22,12 +23,12 @@ namespace waHaylliCore.DataModel.Rates
                     List<RateDisplayViewModel> ratesDisplay = new List<RateDisplayViewModel>();
                     foreach (var x in rates)
                     {
-                        var customerDisplay = new RateDisplayViewModel()
+                        var rateDisplay = new RateDisplayViewModel()
                         {
                             rateId = x.rateId,
                             nameRate = x.nameRate
                         };
-                        ratesDisplay.Add(customerDisplay);
+                        ratesDisplay.Add(rateDisplay);
                     }
                     return ratesDisplay;
                 }
@@ -103,15 +104,15 @@ namespace waHaylliCore.DataModel.Rates
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    Rate rate = new Rate { rateId = rateDelete.rateId, nameRate = rateDelete.nameRate };
-                    List<Rate> rates = new List<Rate>();
-                    rates = context.rates.AsNoTracking().ToList();
-                    rates.Remove(rate);
-                    context.SaveChanges();
+                    var itemToRemove = context.rates.SingleOrDefault(x => x.rateId == rateDelete.rateId); //returns a single item.
+
+                    if (itemToRemove != null)
+                    {
+                        context.rates.Remove(itemToRemove);
+                        context.SaveChanges();
+                    }
                 }
             }
-           
         }
-
     }
 }

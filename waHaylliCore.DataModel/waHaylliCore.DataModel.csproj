@@ -49,45 +49,15 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="context\context.cs" />
-    <Compile Include="Migrations\201809021618115_initial.cs" />
-    <Compile Include="Migrations\201809021618115_initial.Designer.cs">
-      <DependentUpon>201809021618115_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809022045303_dataTables.cs" />
-    <Compile Include="Migrations\201809022045303_dataTables.Designer.cs">
-      <DependentUpon>201809022045303_dataTables.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809022203501_dataCityCusco.cs" />
-    <Compile Include="Migrations\201809022203501_dataCityCusco.Designer.cs">
-      <DependentUpon>201809022203501_dataCityCusco.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809022209515_dataCityCuscoHalfDay.cs" />
-    <Compile Include="Migrations\201809022209515_dataCityCuscoHalfDay.Designer.cs">
-      <DependentUpon>201809022209515_dataCityCuscoHalfDay.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809022221028_dataCityCuscoHalfDay1.cs" />
-    <Compile Include="Migrations\201809022221028_dataCityCuscoHalfDay1.Designer.cs">
-      <DependentUpon>201809022221028_dataCityCuscoHalfDay1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809022224270_dataCityCuscoHalfDay2.cs" />
-    <Compile Include="Migrations\201809022224270_dataCityCuscoHalfDay2.Designer.cs">
-      <DependentUpon>201809022224270_dataCityCuscoHalfDay2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809022225486_dataCityCuscoHalfDay3.cs" />
-    <Compile Include="Migrations\201809022225486_dataCityCuscoHalfDay3.Designer.cs">
-      <DependentUpon>201809022225486_dataCityCuscoHalfDay3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809022231058_dataCityCuscoHalfDay4.cs" />
-    <Compile Include="Migrations\201809022231058_dataCityCuscoHalfDay4.Designer.cs">
-      <DependentUpon>201809022231058_dataCityCuscoHalfDay4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809022231253_dataCityCuscoHalfDay5.cs" />
-    <Compile Include="Migrations\201809022231253_dataCityCuscoHalfDay5.Designer.cs">
-      <DependentUpon>201809022231253_dataCityCuscoHalfDay5.cs</DependentUpon>
+    <Compile Include="Migrations\201809031512536_dataCityCuscoHalfDay.cs" />
+    <Compile Include="Migrations\201809031512536_dataCityCuscoHalfDay.Designer.cs">
+      <DependentUpon>201809031512536_dataCityCuscoHalfDay.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Currencies\CurrencyRepository.cs" />
     <Compile Include="Rates\RateRepository.cs" />
+    <Compile Include="ServiceTypes\ServiceTypeRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -100,32 +70,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201809021618115_initial.resx">
-      <DependentUpon>201809021618115_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809022045303_dataTables.resx">
-      <DependentUpon>201809022045303_dataTables.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809022203501_dataCityCusco.resx">
-      <DependentUpon>201809022203501_dataCityCusco.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809022209515_dataCityCuscoHalfDay.resx">
-      <DependentUpon>201809022209515_dataCityCuscoHalfDay.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809022221028_dataCityCuscoHalfDay1.resx">
-      <DependentUpon>201809022221028_dataCityCuscoHalfDay1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809022224270_dataCityCuscoHalfDay2.resx">
-      <DependentUpon>201809022224270_dataCityCuscoHalfDay2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809022225486_dataCityCuscoHalfDay3.resx">
-      <DependentUpon>201809022225486_dataCityCuscoHalfDay3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809022231058_dataCityCuscoHalfDay4.resx">
-      <DependentUpon>201809022231058_dataCityCuscoHalfDay4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809022231253_dataCityCuscoHalfDay5.resx">
-      <DependentUpon>201809022231253_dataCityCuscoHalfDay5.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809031512536_dataCityCuscoHalfDay.resx">
+      <DependentUpon>201809031512536_dataCityCuscoHalfDay.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

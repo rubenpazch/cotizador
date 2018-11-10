@@ -1,0 +1,52 @@
+﻿@model IEnumerable<waHaylliCore.EntityModel.Currencies.ViewModels.CurrencyDisplayViewModel>
+
+@{
+    ViewBag.Title = "index";
+}
+
+<h2>index</h2>
+
+
+<p>
+    @Html.ActionLink("Create new", "Create")
+</p>
+
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.currencyId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.shortName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.largeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.country)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.currencyId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.shortName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.largeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.country)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.currencyId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.currencyId })
+        </td>
+    </tr>
+    }
+</table>

@@ -56,7 +56,7 @@ namespace waHaylliCore.DataModel.Migrations
             rates.Add(rate1);
             rates.Add(rate2);
 
-            cities.ForEach(s => context.cities.AddOrUpdate(p => p.cityId, s));
+            rates.ForEach(s => context.rates.AddOrUpdate(p => p.rateId, s));
 
             ServiceType serviceType1 = new ServiceType { serviceTypeId = 1, titleServiceType = "Tour Guide", descriptionServiceType="Tour Guide English - Spanish"};
             ServiceType serviceType2 = new ServiceType { serviceTypeId = 2, titleServiceType = "Restaurant", descriptionServiceType="Assintant Guide Trainee"};

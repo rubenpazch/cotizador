@@ -10,6 +10,13 @@ namespace waHaylliCore.EntityModel
     {
         public int rateId { get; set; }
         public string nameRate { get; set; }
-        
+        public Currency currency { get; set; }
+
+        public Rate(int rateId, string nameRate, Currency currency)
+        {
+            this.rateId = rateId;
+            this.nameRate = nameRate;
+            this.currency = currency;
+        }
     }
 }
